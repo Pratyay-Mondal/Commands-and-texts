@@ -1,0 +1,66 @@
+For manjaro-kde-------->
+
+installation of softwares---->  yay -S app_name
+
+delete of softwares---->  yay -R app_name
+
+delete on pendrive--> ventoy--->    sudo rm -r file name
+
+for clear the cache files---->    yay -Sc
+
+
+Start menu for kernal change---> terminal commands
+sudo nano /etc/default/grub
+GRUB_TIMEOUT_STYLE=hidden   ///   hidden-->menu
+sudo update-grub
+
+
+for microphone----->
+ sudo nano /etc/modprobe.d/alsa-base.conf
+ options snd-hda-intel model=dell-headset-multi
+
+extra--->
+sudo pacman -S base-devel
+
+For file manager max, min, close button view--->
+yay -S plasma5-applets-window-buttons
+
+
+For swap increasing----->
+swapon -s
+swapon --show
+cd /
+sudo swapoff -a
+swapon --show
+sudo rm swapfile
+sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+swapon --show
+sudo nano /etc/fstab
+/swapfile
+cat /etc/fstab
+swapon --show
+
+
+----------------------------------------------------------------------------------------
+
+For ubuntu-------->
+
+
+remove the cache files------------>       sudo apt-get autoremove     
+
+
+
+
+
+afer ubuntu installation----------> sudo apt install ubuntu-restricted-extras
+
+mic problem in lenovo ideapad------------>    sudo gedit /etc/modprobe.d/alsa-base.conf
+                                    	then add it at last --------->    options snd-hda-intel model=dell-headset-multi
+
+
+
+
+google font----------->  sudo apt install fonts-roboto

@@ -1,0 +1,59 @@
+remove the cache files------------>       sudo apt-get autoremove     
+
+remove all the files   ----->   rm -r file_name
+
+sudo dmidecode -t memory | grep -i speed			// memory check speed
+
+sudo lshw -short -C memory                                              // memory check
+
+
+
+fun in terminal----------->
+cmatrix
+cowsay "wdwad"       ---cow is talking
+sl   ---train
+figlet "arfaeaa"
+xeyes
+asciiquarium
+
+
+
+
+afer ubuntu installation----------> sudo apt install ubuntu-restricted-extras
+
+
+
+
+mic problem in lenovo ideapad------------>    sudo gedit /etc/modprobe.d/alsa-base.conf
+                                    	then add it at last --------->    options snd-hda-intel model=dell-headset-multi
+
+	--------> paste it in terminal --->   ctrl+o   --->  enter  --->   ctrl+x         (save and cut)
+
+
+
+
+google font----------->  sudo apt install fonts-roboto
+
+
+
+
+For swap create ----------->
+
+sudo swapoff -a
+sudo rm /swapfile
+sudo dd if=/dev/zero of=/swapfile bs=1M count=10240 status=progress
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+cat /etc/fstab
+
+
+
+
+
+
+
+
+
+
+
